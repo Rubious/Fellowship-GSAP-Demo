@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "gsap": "npm:@gsap/shockingly@^3.12.5",
+    "postcss-cli": "^11.0.0",
+    "reset-css": "^5.0.2",
+    "uglify-js": "^3.19.2",
+    "uglifyjs-folder": "^3.3.0"
+  },
+  "scripts": {
+    "build": "conc \"npm run build:tw\" \"npm run build:js\"",
+    "build:tw": "npx tailwindcss --postcss -i src/styles/input.scss -o dist/styles/output.css --minify",
+    "build:js": "uglifyjs-folder src/scripts -eo dist/scripts -x .js",
+    "watch": "npx tailwindcss --postcss -i src/styles/input.scss -o dist/styles/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
+  }
+}
