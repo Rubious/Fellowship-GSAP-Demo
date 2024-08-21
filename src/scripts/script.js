@@ -17,7 +17,7 @@ addEventListener("DOMContentLoaded", (event) => {
     });
 
     var tl = gsap.timeline();
-    var scrollSpeedMultiplier = 3;
+    var scrollSpeedMultiplier = 2;
 
     tl.to("#line", {  
         morphSVG: "#squiggle-1",
@@ -25,7 +25,7 @@ addEventListener("DOMContentLoaded", (event) => {
             trigger: "#section-1",
             anticipatePin: true,
             end: "+=" + (window.innerHeight * scrollSpeedMultiplier), // speed of scroll animation, higher is slower
-            scrub: 2,
+            scrub: true,
             pin:true,
         }
     });
