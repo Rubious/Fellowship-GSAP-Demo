@@ -14,9 +14,7 @@ ScrollSmoother.create({
     smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
 });
 
-gsap.to("#line", { 
-    duration: 6, 
-    ease: "power1.inOut", 
+gsap.to("#line", {  
     morphSVG: "#curve",
     scrollTrigger: {
         trigger: "#section-1",
@@ -26,12 +24,33 @@ gsap.to("#line", {
 });
 
 gsap.fromTo("#line", { 
-    duration: 6, 
     morphSVG: "#curve",
     },{
         morphSVG: "#curve-2",
     scrollTrigger: {
         trigger: "#section-2",
+        scrub: true,
+        pin:true,
+    }
+});
+
+gsap.fromTo("#line", { 
+    morphSVG: "#curve-2",
+    },{
+        morphSVG: "#curve-3",
+    scrollTrigger: {
+        trigger: "#section-3",
+        scrub: true,
+        pin:true,
+    }
+});
+
+gsap.fromTo("#line", { 
+    morphSVG: "#curve-3",
+    },{
+        morphSVG: "#line",
+    scrollTrigger: {
+        trigger: "#section-4",
         scrub: true,
         pin:true,
     }
