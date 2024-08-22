@@ -22,31 +22,26 @@
             </section>
             <div id="smooth-wrapper">
                 <div id="smooth-content">
-                    <section id="section-1" class="grid items-center w-screen h-screen pl-14">
+                    <section id="section-1" class="grid items-center w-screen h-screen section-panel pl-14">
                         <div class="w-[45%]">
                             <h2>We help businesses that struggle to manage multiple websites.</h2>
                         </div>
                     </section> 
-                    <section id="section-2" class="grid items-center w-screen h-screen pl-14">
+                    <section id="section-2" class="grid items-center w-screen h-screen section-panel pl-14">
                         <div class="w-[55%]">
                             <h2>Those suffering from</h2>
                             <p>Juggling sites built on different platforms Time consuming content management Expensive support & maintenance Inconsistent branding across sites
                             Poor rankings in the SERPs</p>
                         </div>
                     </section> 
-                    <section id="section-3" class="grid items-center w-screen h-screen pl-14">
+                    <section id="section-3" class="grid items-center w-screen h-screen section-panel pl-14">
                         <div class="w-[55%]">
                             <h2>We transform inefficient, disconnected websites</h2>
                         </div>
                     </section> 
-                    <section id="section-4" class="grid items-center w-screen h-screen pl-14">
-                        <div class="w-[55%]">
-                            <h2>Section 4</h2>
-                        </div>
-                    </section> 
-                    <section id="section-5" class="grid items-center w-screen h-screen pl-14">
-                        <div class="w-[55%]">
-                            <h2>Section 5</h2>
+                    <section id="section-4" class="grid items-center w-screen h-screen section-panel pl-14">
+                        <div class="w-[45%]">
+                            <h2>into a highly efficient network of sites.</h2>
                         </div>
                     </section> 
                 </div>
