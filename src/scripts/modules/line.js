@@ -16,10 +16,10 @@ export function line(){
         morphSVG: "#squiggle-2",
         duration: 1,
         scrollTrigger: {
-            trigger: "#section-2",
+            trigger: "#section-3",
             scrub: true,
             start: 'top top',
-            pin:"#section-2",
+            pin:"#section-3",
         }
     });
 
@@ -28,10 +28,10 @@ export function line(){
         duration: 1,
         immediateRender:false,
         scrollTrigger: {
-            trigger: "#section-3",
+            trigger: "#section-4",
             start: 'top top',
             scrub: true,
-            pin:"#section-3",
+            pin:"#section-4",
         }
     });
 
@@ -40,10 +40,10 @@ export function line(){
         duration: 1,
         immediateRender:false,
         scrollTrigger: {
-            trigger: "#section-4",
+            trigger: "#section-5",
             start: 'top top',
             scrub: true,
-            pin:"#section-4",
+            pin:"#section-5",
         }
     });
 
