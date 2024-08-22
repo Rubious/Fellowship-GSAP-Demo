@@ -13,7 +13,5 @@ import { ScrollTrigger } from "../../node_modules/gsap/ScrollTrigger.js";*/
 gsap.registerPlugin(ScrollSmoother,MorphSVGPlugin,ScrollTrigger);
 
 addEventListener("DOMContentLoaded", (event) => {
-
     line(); //build line
-
 });

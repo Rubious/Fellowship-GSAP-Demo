@@ -12,30 +12,18 @@ export function line(){
         smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
     });
 
-    gsap.to("#line", {  
-        morphSVG: "#squiggle-1",
-        duration: 1,
-        scrollTrigger: {
-            trigger: "#section-1",
-            scrub: true,
-            start: 'top top',
-            pin:"#section-1",
-        }
-    });
-
-    gsap.to('#line', {
+    gsap.to("#squiggle-1", {  
         morphSVG: "#squiggle-2",
         duration: 1,
-        immediateRender:false,
         scrollTrigger: {
             trigger: "#section-2",
-            start: 'top top',
             scrub: true,
+            start: 'top top',
             pin:"#section-2",
         }
     });
 
-    gsap.to("#line", {
+    gsap.to('#squiggle-1', {
         morphSVG: "#squiggle-3",
         duration: 1,
         immediateRender:false,
@@ -47,7 +35,7 @@ export function line(){
         }
     });
 
-    gsap.to("#line", {
+    gsap.to("#squiggle-1", {
         morphSVG: "#line",
         duration: 1,
         immediateRender:false,
