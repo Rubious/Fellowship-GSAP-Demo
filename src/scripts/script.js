@@ -19,56 +19,56 @@ addEventListener("DOMContentLoaded", (event) => {
         smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
     });
 
-    var tl = gsap.timeline();
-    var scrollSpeedMultiplier = 2;
-
-    tl.to("#line", {  
+    gsap.to("#line", {  
         morphSVG: "#squiggle-1",
+        duration: 1,
         scrollTrigger: {
             trigger: "#section-1",
-            anticipatePin: true,
-            end: "+=" + (window.innerHeight * scrollSpeedMultiplier), // speed of scroll animation, higher is slower
             scrub: true,
-            pin:true,
+            start: 'top top',
+            //pin:true,
         }
     });
 
-    tl.fromTo("#line", { 
+    gsap.fromTo("#line", { 
         morphSVG: "#squiggle-1",
         },{
         morphSVG: "#squiggle-2",
+        duration: 1,
+        immediateRender:false,
         scrollTrigger: {
             trigger: "#section-2",
-            anticipatePin: true,
-            end: "+=" + (window.innerHeight * scrollSpeedMultiplier), // speed of scroll animation, higher is slower
+            start: 'top top',
             scrub: true,
-            pin:true,
+            //pin:true,
         }
     });
 
-    tl.fromTo("#line", { 
+    gsap.fromTo("#line", { 
         morphSVG: "#squiggle-2",
         },{
         morphSVG: "#squiggle-3",
+        duration: 1,
+        immediateRender:false,
         scrollTrigger: {
             trigger: "#section-3",
-            anticipatePin: true,
-            end: "+=" + (window.innerHeight * scrollSpeedMultiplier), // speed of scroll animation, higher is slower
+            start: 'top top',
             scrub: true,
-            pin:true,
+            //pin:true,
         }
     });
 
-    tl.fromTo("#line", { 
+    gsap.fromTo("#line", { 
         morphSVG: "#squiggle-3",
         },{
         morphSVG: "#line",
+        duration: 1,
+        immediateRender:false,
         scrollTrigger: {
             trigger: "#section-4",
-            anticipatePin: true,
-            end: "+=" + (window.innerHeight * scrollSpeedMultiplier), // speed of scroll animation, higher is slower
+            start: 'top top',
             scrub: true,
-            pin:true,
+            //pin:true,
         }
     });
 
