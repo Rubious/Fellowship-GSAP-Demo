@@ -35,7 +35,7 @@ export function line(){
             scrub: true,
             pin:"#section-4",
         },
-        defaults:{duration:1, ease:'none'}
+        defaults:{duration:3, ease:'none'}
     });
     
     //Split the text and add the animation
@@ -52,7 +52,7 @@ export function line(){
         morphSVG: "#line",
         duration: 1,
         immediateRender:false,
-    }, '-=1.5');
+    }, '-=3');
 
     
 
