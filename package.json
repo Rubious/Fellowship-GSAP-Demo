@@ -1,5 +1,8 @@
 {
+  "type": "module",
   "dependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "concurrently": "^8.2.2",
     "gsap": "npm:@gsap/shockingly@^3.12.5",
     "postcss-cli": "^11.0.0",
