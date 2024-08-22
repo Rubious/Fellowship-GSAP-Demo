@@ -26,13 +26,11 @@ addEventListener("DOMContentLoaded", (event) => {
             trigger: "#section-1",
             scrub: true,
             start: 'top top',
-            //pin:true,
+            pin:"#section-1",
         }
     });
 
-    gsap.fromTo("#line", { 
-        morphSVG: "#squiggle-1",
-        },{
+    gsap.to('#line', {
         morphSVG: "#squiggle-2",
         duration: 1,
         immediateRender:false,
@@ -40,13 +38,11 @@ addEventListener("DOMContentLoaded", (event) => {
             trigger: "#section-2",
             start: 'top top',
             scrub: true,
-            //pin:true,
+            pin:"#section-2",
         }
     });
 
-    gsap.fromTo("#line", { 
-        morphSVG: "#squiggle-2",
-        },{
+    gsap.to("#line", {
         morphSVG: "#squiggle-3",
         duration: 1,
         immediateRender:false,
@@ -54,13 +50,11 @@ addEventListener("DOMContentLoaded", (event) => {
             trigger: "#section-3",
             start: 'top top',
             scrub: true,
-            //pin:true,
+            pin:"#section-3",
         }
     });
 
-    gsap.fromTo("#line", { 
-        morphSVG: "#squiggle-3",
-        },{
+    gsap.to("#line", {
         morphSVG: "#line",
         duration: 1,
         immediateRender:false,
@@ -68,7 +62,7 @@ addEventListener("DOMContentLoaded", (event) => {
             trigger: "#section-4",
             start: 'top top',
             scrub: true,
-            //pin:true,
+            pin:"#section-4",
         }
     });
 
