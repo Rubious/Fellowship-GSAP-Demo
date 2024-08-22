@@ -1,5 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import terser from '@rollup/plugin-terser'; // Importing the Terser plugin
 
 export default {
     input: 'src/scripts/script.js',
@@ -11,5 +12,6 @@ export default {
     plugins: [
         resolve(), // Resolves node_modules for imports
         commonjs(), // Converts CommonJS modules to ES6
+        terser(), // Minifies the output
     ],
 };
