@@ -22,7 +22,7 @@ export function line(){
             trigger: "#section-3",
             scrub: true,
             start: 'top top',
-            pin:"#section-3",
+            //pin:"#section-3",
         }
     });
 
@@ -35,7 +35,7 @@ export function line(){
             scrub: true,
             pin:"#section-4",
         },
-        defaults:{duration:3, ease:'none'}
+        defaults:{duration:5, ease:'none'}
     });
     
     //Split the text and add the animation
@@ -44,15 +44,15 @@ export function line(){
         duration: 1, 
         y: 100, 
         autoAlpha: 0, 
-        stagger: 3
+        stagger: 4
     });
 
     //Add the squiggle animation and offset -1.5 seconds to overlap with the text
     section4timeline.to('#squiggle-1', {
         morphSVG: "#line",
-        duration: 1,
+        duration: 5,
         immediateRender:false,
-    }, '-=3');
+    }, '-=5');
 
     
 
