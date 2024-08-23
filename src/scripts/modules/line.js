@@ -54,6 +54,11 @@ export function line(){
         immediateRender:false,
     }, '-=5');
 
-    
+    section4timeline.set("#circle",{ transformOrigin: "center" });
+    section4timeline.from('#circle', {
+        scale:0,
+        rotation:720,
+        duration: 4,
+    }, '-=0.5)');
 
 }
