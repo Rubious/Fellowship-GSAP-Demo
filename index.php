@@ -22,6 +22,10 @@
                 <svg id="circle" class="absolute top-1/2 left-1/2 ml-[-125px] mt-[-125px]" height="250" width="250" xmlns="http://www.w3.org/2000/svg">
                     <circle r="120" cx="125" cy="125" fill="none" style="stroke:#000;stroke-width:2;fill:none" />
                 </svg>
+                <svg id="s-1" class="absolute" height="50" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="50" fill="blue" />
+                    <ellipse class="hidden" ry="25" rx="25" cy="25" cx="25" fill="green" />
+                </svg>
             </section>
             <div id="smooth-wrapper">
                 <div id="smooth-content">
