@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { SplitText } from "gsap/dist/SplitText";
 
 import { sattelites } from "./modules/sattelites.js";
+import { section1 } from "./modules/section-1.js";
 import { section3 } from "./modules/section-3.js";
 import { section4 } from "./modules/section-4.js";
 
@@ -21,6 +22,7 @@ addEventListener("DOMContentLoaded", (event) => {
 
     sattelites();
 
+    section1(); //build section 1
     section3(); //build section 3 animations
     section4(); //build section 4 animations
 });
